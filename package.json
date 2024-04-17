@@ -1,0 +1,49 @@
+{
+    "name": "@milesroxas/webflow-starter",
+    "version": "0.0.0",
+    "description": "Developer starter template for Three JS projects using Webflow",
+    "homepage": "https://www.milesroxas.com",
+    "license": "ISC",
+    "keywords": [],
+    "author": {
+        "name": "Miles Roxas",
+        "url": "https://milesroxas.com/"
+    },
+    "type": "module",
+    "main": "src/main.js",
+    "module": "src/main.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development node ./bin/build.js",
+        "build": "cross-env NODE_ENV=production node ./bin/build.js",
+        "check": "tsc --noEmit",
+        "format": "prettier --write ./src",
+        "release": "changeset publish",
+        "update": "npm update -i -L -r"
+    },
+    "devDependencies": {
+        "@changesets/changelog-git": "^0.1.14",
+        "@changesets/cli": "^2.26.2",
+        "cross-env": "^7.0.3",
+        "esbuild": "^0.19.5",
+        "eslint": "^8.53.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "prettier": "^3.1.0"
+    },
+    "dependencies": {
+        "@barba/core": "^2.9.7",
+        "@finsweet/ts-utils": "^0.40.0",
+        "esbuild-plugin-glsl": "^1.2.2",
+        "gsap": "^3.12.5",
+        "lil-gui": "^0.19.1",
+        "three": "^0.162.0",
+        "vite-plugin-glsl": "^1.2.1"
+    },
+    "engines": {
+        "npm": ">=8"
+    }
+}
