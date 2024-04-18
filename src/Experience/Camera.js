@@ -21,7 +21,7 @@ export default class Camera {
       0.1,
       100
     );
-    this.instance.position.set(6, 4, 8);
+    this.instance.position.set(2, 4, 20);
     this.scene.add(this.instance);
   }
 
@@ -37,6 +37,8 @@ export default class Camera {
 
     this.controls.minDistance = 10;
     this.controls.maxDistance = 22;
+
+    this.controls.target.set(0, 2, 0);
   }
 
   resize() {
